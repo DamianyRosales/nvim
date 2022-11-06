@@ -8,3 +8,8 @@ configs.setup {
         enable = true, -- default is disabled always
     }
 }
+
+
+-- zo for unfolding and zc for folding
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
