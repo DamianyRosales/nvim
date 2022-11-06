@@ -4,13 +4,14 @@ require('packages')
 
 require('treesitter')
 
--- theme
-require('themes/everforest')
-
 vim.cmd([[
     if has('termguicolors')
         set termguicolors
     endif
 ]])
 
+-- theme
+require('themes/everforest')
+--require('themes/gruvbox_material')
+--require('themes/onedarkpro')
 

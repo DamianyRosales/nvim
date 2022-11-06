@@ -2,6 +2,7 @@ require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use 'sainnhe/gruvbox-material'
     use 'sainnhe/everforest'
+    use 'olimorris/onedarkpro.nvim'
     use {
         'nvim-treesitter/nvim-treesitter',
         run = function()
