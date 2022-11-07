@@ -6,6 +6,12 @@ require('packer').startup(function()
     use 'olimorris/onedarkpro.nvim'
     -- IDE pluggins
     use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+        -- or                            , branch = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+
+    use {
         'nvim-treesitter/nvim-treesitter',
         run = function()
             local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
@@ -35,5 +41,5 @@ require('packer').startup(function()
         config = function ()
             require'alpha'.setup(require'alpha.themes.startify'.config)
         end
-}
+    }
 end)
