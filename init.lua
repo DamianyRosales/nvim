@@ -15,6 +15,9 @@ require('themes/everforest')
 --require('themes/gruvbox_material')
 --require('themes/onedarkpro')
 
+require('icons')
+require('tree')
+
 -- lsp config
 local lsp_installer = require("nvim-lsp-installer")
 local capabilities = require('cmp_nvim_lsp').default_capabilities()

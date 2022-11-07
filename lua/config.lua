@@ -1,3 +1,8 @@
+--vim.g.loaded_netrw = 1
+--vim.g.loaded_netrwPlugin = 1
+
+vim.g.mapleader = " "
+
 -- Global options
 vim.o.exrc = true
 vim.o.guicursor = false

@@ -13,6 +13,8 @@ keymap('n', '<c-h>', '<c-w>h', opts)
 keymap('n', '<c-k>', '<c-w>k', opts)
 keymap('n', '<c-l>', '<c-w>l', opts)
 
+-- LSP maps
+
 local function nkeymap(key,map)
     keymap('n', key, map, opts)
 end
@@ -28,3 +30,15 @@ nkeymap('K', ':lua vim.lsp.buf.hover()<cr>')
 nkeymap('<c-k>', ':lua vim.lsp.buf.signature_help()<cr>')
 nkeymap('<leader>af', ':lua vim.lsp.buf.code_action()<cr>')
 nkeymap('<leader>rn', ':lua vim.lsp.buf.rename()<cr>')
+
+--nkeymap('<c-n>', ':NvimTreeOpen<cr>')
+keymap('n', '<C-n>', [[:NvimTreeToggle<cr>]], {})
+
+-- Closing
+nkeymap('<C-q>', ':q!<cr>')
+
+-- Close current tab
+nkeymap('<C-x>', ':bd<cr>')
+
+-- Navigate tabs
+nkeymap('<C-e>', ':bnext<cr>')
