@@ -93,3 +93,12 @@ cmp.setup.cmdline(':', {
 require('lspconfig')['sumneko_lua'].setup {
     capabilities = capabilities
 }
+
+
+-- -- >>> Airline config
+
+vim.cmd([[
+    let g:airline#extensions#tabline#enabled=1
+    let g:airline#extensions#tabline#formatter = 'jsformatter'
+    let g:airline_powerline_fonts=1
+]])

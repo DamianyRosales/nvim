@@ -18,6 +18,7 @@ require('packer').startup(function()
             ts_update()
         end,
     }
+
     use 'neovim/nvim-lspconfig'
     use 'williamboman/nvim-lsp-installer'
     use 'hrsh7th/cmp-nvim-lsp'
@@ -42,4 +43,19 @@ require('packer').startup(function()
             require'alpha'.setup(require'alpha.themes.startify'.config)
         end
     }
+
+    -- Vim current word highlighting
+    use 'dominikduda/vim_current_word'
+    -- CSS colors displayer
+    use 'ap/vim-css-color'
+    -- Vim airline and airline themes
+    use 'vim-airline/vim-airline'
+    use 'vim-airline/vim-airline-themes'
+    -- Auto pair for ()[]{}
+    use 'jiangmiao/auto-pairs'
+
+    -- Dart/Flutter related plugins
+    use 'thosakwe/vim-flutter'
+    use 'natebosch/vim-lsc'
+    use 'natebosch/vim-lsc-dart'
 end)
