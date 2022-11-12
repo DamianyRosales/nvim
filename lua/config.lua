@@ -15,6 +15,7 @@ vim.o.hlsearch = true
 vim.o.completeopt = "menuone,noinsert,noselect"
 vim.o.scrolloff = 8
 vim.o.encoding = "UTF-8"
+vim.o.smarttab = true
 
 -- Local to window options
 vim.wo.relativenumber = true
@@ -27,9 +28,7 @@ vim.bo.syntax = "on"
 vim.bo.smartindent = true
 vim.bo.swapfile = false
 vim.bo.expandtab = true
-vim.bo.shiftwidth = 4
-vim.bo.softtabstop = 4
+--vim.bo.shiftwidth = 4
+--vim.bo.softtabstop = 0
 vim.bo.tabstop = 4
-vim.bo.undofile = true
-
-
+vim.bo.undofile = false
