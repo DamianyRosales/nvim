@@ -31,4 +31,8 @@ return require('packer').startup(function(use)
 	  'mbbill/undotree'
   }
 
+  use {
+	  'tpope/vim-fugitive'
+  }
+
 end)
