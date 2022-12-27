@@ -13,13 +13,13 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use { 
-	  "catppuccin/nvim", 
+  use {
+	  "catppuccin/nvim",
 	  as = "catppuccin",
   }
 
-  use { 
-	  'nvim-treesitter/nvim-treesitter', 
+  use {
+	  'nvim-treesitter/nvim-treesitter',
 	  {run = ':TSUpdate'}
   }
 
@@ -64,6 +64,18 @@ return require('packer').startup(function(use)
 
   use {
       'glepnir/dashboard-nvim'
+  }
+
+  -- Vim current word highlighting
+  use 'dominikduda/vim_current_word'
+  -- CSS colors displayer
+  use 'ap/vim-css-color'
+  -- surround
+  use 'tpope/vim-surround'
+  -- autopair
+  use {
+      "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
   }
 
 end)
