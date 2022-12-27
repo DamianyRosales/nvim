@@ -39,6 +39,13 @@ require("catppuccin").setup({
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
 })
+function TransparentBackground()
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none", })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none", })
+end
+
 
 -- setup must be called before loading
 vim.cmd.colorscheme "catppuccin"
+
+
