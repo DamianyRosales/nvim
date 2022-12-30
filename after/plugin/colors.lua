@@ -1,51 +1,39 @@
-require("catppuccin").setup({
-    flavour = "mocha", -- latte, frappe, macchiato, mocha
-    background = { -- :h background
-        light = "latte",
-        dark = "mocha",
+vim.cmd('set background=dark')
+vim.g.everforest_background='hard'
+vim.g.everforest_better_performance = 1
+vim.g.everforest_enable_italic = 1
+vim.g.everforest_transparent_background=0
+vim.g.everforest_sign_column_background='none'
+vim.g.everforest_spell_foreground='colored'
+vim.g.everforest_ui_contrast='high'
+vim.g.everforest_diagnostic_text_highlight=1
+vim.g.everforest_diagnostic_line_highlight=1
+vim.g.everforest_current_word='italic'
+vim.cmd('colorscheme everforest')
+
+vim.fn.sign_define({
+    {
+        name='DiagnosticSignError',
+        text='E',
+        texthl='DiagnosticSignError',
+        linehl='ErrorLine'
     },
-    transparent_background = true,
-    term_colors = false,
-    dim_inactive = {
-        enabled = false,
-        shade = "dark",
-        percentage = 0.15,
+    {
+        name='DiagnosticSignWarn',
+        text='W',
+        texthl='DignosticSignError',
+        linehl='WarningLine'
     },
-    no_italic = false, -- Force no italic
-    no_bold = false, -- Force no bold
-    styles = {
-        comments = { "italic" },
-        conditionals = { "italic" },
-        loops = {},
-        functions = {},
-        keywords = {},
-        strings = {},
-        variables = {},
-        numbers = {},
-        booleans = {},
-        properties = {},
-        types = {},
-        operators = {},
+    {
+        name='DiagnosticSignInfo',
+        text='I',
+        texthl='DignosticSignInfo',
+        linehl='InfoLine'
     },
-    color_overrides = {},
-    custom_highlights = {},
-    integrations = {
-        cmp = true,
-        gitsigns = true,
-        nvimtree = true,
-        telescope = true,
-        notify = false,
-        mini = false,
-        -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+    {
+        name='DiagnosticSignHint',
+        text='H',
+        texthl='DignosticSignHint',
+        linehl='HintLine'
     },
 })
-function TransparentBackground()
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none", })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none", })
-end
-
-
--- setup must be called before loading
-vim.cmd.colorscheme "catppuccin"
-
-
