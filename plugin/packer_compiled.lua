@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/home/nyro/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  everforest = {
+    loaded = true,
+    path = "/home/nyro/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/nyro/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -119,11 +124,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nyro/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
-  },
-  ["kanagawa.nvim"] = {
-    loaded = true,
-    path = "/home/nyro/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
-    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["leap.nvim"] = {
     loaded = true,

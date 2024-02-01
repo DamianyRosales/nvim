@@ -21,8 +21,8 @@ return require('packer').startup(function(use)
     use "nvim-lua/plenary.nvim"
 
     -- Theme config
-    use "rebelot/kanagawa.nvim"
-    --use 'sainnhe/everforest'
+    --use "rebelot/kanagawa.nvim"
+    use 'sainnhe/everforest'
     -- status line 
 
     use {
