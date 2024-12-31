@@ -50,6 +50,7 @@ return {
                 'sqls',
                 'vimls',
                 'yamlls',
+                -- :MasonInstall codelldb
             },
             handlers = {
                 function(server_name) -- default handler (optional)

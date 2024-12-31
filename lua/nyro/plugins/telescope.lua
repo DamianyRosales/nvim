@@ -4,6 +4,7 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' },
     config = function ()
         local builtin = require('telescope.builtin')
+        vim.cmd ("autocmd User TelescopePreviewerLoaded setlocal number")
         vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
         vim.keymap.set('n', '<C-p>', builtin.git_files, {})
         -- for live grep, ripgrep must be installed --> sudo pacman -S ripgrep
