@@ -1,6 +1,7 @@
 require("nyro.main.options")
 require("nyro.main.remaps")
 
+-- lsp stuff
 local autocmd = vim.api.nvim_create_autocmd
 
 autocmd('LspAttach', {
